@@ -90,8 +90,8 @@ function ProductScreen() {
                               onChange={(e) => setQty(e.target.value)}
                             >
                               {
-                                [...Array(product.countInStock).keys()].map(x =>(
-                                  <option key= {x+1} value ={x + 1}>
+                                [...Array(product.countInStock).keys()].map((x) =>(
+                                  <option key= {x + 1} value ={x + 1}>
                                     {x + 1}
                                   </option>
                                 ))

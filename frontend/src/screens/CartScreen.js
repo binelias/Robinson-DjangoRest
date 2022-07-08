@@ -10,13 +10,12 @@ function CartScreen() {
   let {id} = useParams();
   let navigate = useNavigate();
   let {search} = useLocation();
-  const productId =id;
-  const qty = search ? Number(search.split('=')[1]) :1; 
+  const productId = id;
+  const qty = search ? Number(search.split('=')[1]) : 1; 
   
   const dispatch = useDispatch()
   const cart = useSelector(state => state.cart);
   const { cartItems } =cart
-  console.log('cartItems: ', cartItems)
 
   useEffect(() => {
     if(productId) {
@@ -29,7 +28,7 @@ function CartScreen() {
   }
 
   const checkoutHandler = () => {
-    navigate('/shipping')
+    navigate('/login?redirect=shipping')
   }
 
   return (
@@ -64,8 +63,8 @@ function CartScreen() {
                           onChange={(e) => dispatch(addToCart(item.product, Number(e.target.value)))}
                         >
                         {
-                          [...Array(item.countInStock).keys()].map(x =>(
-                            <option key= {x+1} value ={x + 1}>
+                          [...Array(item.countInStock).keys()].map((x) =>(
+                            <option key= {x +1 } value ={x + 1}>
                               {x + 1}
                             </option>
                           ))
