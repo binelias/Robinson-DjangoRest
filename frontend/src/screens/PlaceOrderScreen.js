@@ -13,7 +13,6 @@ function PlaceOrderScreen() {
   const orderCreate = useSelector(state => state.orderCreate);
   const {order, error, success} = orderCreate;
   
-  
   const cart = useSelector(state => state.cart);
   
   const dispatch = useDispatch();

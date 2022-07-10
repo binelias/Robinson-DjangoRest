@@ -54,7 +54,7 @@ function UserEditScreen() {
       <FormContainer>
         <h1 className='pt-md-3'>Edit User</h1>
         {loadingUpdate && <Loader/>}
-        {errorUpdate && <Message variant='danger'>{error}</Message>}
+        {errorUpdate && <Message variant='danger'>{errorUpdate}</Message>}
 
         {loading ? <Loader/> : error ? <Message variant='danger'>{error}</Message>
         : (
