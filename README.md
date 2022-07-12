@@ -1,5 +1,5 @@
 <div align="center">
-<img width="50%" src="https://raw.githubusercontent.com/binelias/RobinsonShop-DjangoRest/main/Pictures/Home screen.PNG"/>
+<img width="70%" src="https://raw.githubusercontent.com/binelias/RobinsonShop-DjangoRest/main/Pictures/Home screen.PNG"/>
 
 # Notes App using React with Django
 
