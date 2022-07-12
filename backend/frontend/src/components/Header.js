@@ -24,10 +24,9 @@ const Header = () => {
           
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <SearchBox/>
+            <SearchBox />
             <Nav className="me-auto tr">
-
-              <LinkContainer to='/cart'>
+              <LinkContainer to='/cart' className='pe-sm-4'>
                 <Nav.Link><i className='fas fa-shopping-cart'>Cart</i></Nav.Link>
               </LinkContainer>
 
